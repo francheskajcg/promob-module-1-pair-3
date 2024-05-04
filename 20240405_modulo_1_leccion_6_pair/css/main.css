@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightyellow;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+    position: sticky; /*Si usamos fixed, el contenido se va a superponer a la barra*/
+    top: 0;
+    left: 0; /*left: 0 y right: 0 sirven para que el header ocupe el 100% del ancho de pantalla*/
+    right: 0;
+    z-index: 1;
+
+    background-color: lightblue;
+}
+
+.menu__list{
+    display: flex;
+    gap: 32px;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu__item{
+    text-decoration: none;
+    color: black;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.block-1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.block-2 > img{
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+.subtitle{
+    padding: 0 0 1.125rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+
+    background-color: lightblue;
+}
+
+.footer-2{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-2 > img{
+    width: 40px;
+    
+    border-radius: 10px;
+}
+
+@media (min-width: 820px){
+
+}
+
+@media (min-width: 1024px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 30px;
+        position: sticky; /*Si usamos fixed, el contenido se va a superponer a la barra*/
+        top: 0;
+        left: 0; /*left: 0 y right: 0 sirven para que el header ocupe el 100% del ancho de pantalla*/
+        right: 0;
+        z-index: 1;
+    
+        background-color: lightblue;
+    }
+    
+    .menu__list{
+        display: flex;
+        gap: 32px;
+    
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    .menu__item{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        padding: 60px;
+    }
+    
+    .block-1{
+        margin: 70px;
+    }
+    
+    .block-2 > img{
+        width: 500px;
+    
+        border-radius: 5px;
+    }
+    
+    .subtitle{
+        padding: 0 0 1.125rem;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 30px;
+    
+        background-color: lightblue;
+    }
+    
+    .footer-2{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .footer-2 > img{
+        width: 40px;
+        
+        border-radius: 10px;
+    }
+}
